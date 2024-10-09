@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+        }
+
+        .navbar {
+            background-color: #007BFF;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: white;
+            padding: 14px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .main-section {
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 36px;
+            color: #333;
+        }
+
+        .filter-bar {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .filter-bar select, .filter-bar input {
+            padding: 10px;
+            margin: 0 10px;
+            font-size: 16px;
+            width: 200px;
+        }
+
+        .cards-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .card h3 {
+            font-size: 22px;
+            color: #333;
+        }
+
+        .card p {
+            margin: 10px 0;
+            color: #666;
+        }
+
+        .card .status {
+            font-weight: bold;
+            color: #007BFF;
+        }
+
+        .card a {
+            display: block;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .card a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="coding-environment.html">Coding Environment</a>
+    </div>
+
+    <div class="main-section">
+        <h1>Dashboard</h1>
+
+        <!-- Filter Bar -->
+        <div class="filter-bar">
+            <select name="language-filter">
+                <option value="all">All Languages</option>
+                <option value="c">C</option>
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+            </select>
+            <input type="text" placeholder="Search exercises...">
+        </div>
+
+        <!-- Cards Container -->
+        <div class="cards-container">
+            <div class="card">
+                <h3>Sorting Algorithm</h3>
+                <p>Language: C</p>
+                <p>Difficulty: Medium</p>
+                <p class="status">Not Started</p>
+                <a href="coding-environment.html">Start Exercise</a>
+            </div>
+            <!-- Add more cards for exercises -->
+        </div>
+    </div>
+
+</body>
+</html>
